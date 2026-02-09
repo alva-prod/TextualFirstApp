@@ -1,0 +1,15 @@
+Aquí deberia estar tu llave de la API de https://openweathermap.org/ 
+
+En caso de no tener:
+  1. Crea tu cuenta gratuita 
+  2. Ve a tu perfil arriba a la derecha
+  3. Selecciona "mis llaves"
+  4. Copia tu llave Default
+  5. Borra TODO el contenido de este archivo 
+  6. Reemplaza con tu llave 
+
+En caso de si tener:
+  1. Borra TODO el contenido de este archivo
+  2. Reemplaza con tu llave
+
+este programa usa la API en nivel gratuito, limite: [60 requests / minuto, 1000 requests / hora]
