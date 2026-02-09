@@ -19,10 +19,7 @@ def coordFinder(city: str | None):
 
 def weatherGetter(lat, lon):
     api_key = open('api_key.txt', 'r').read().strip()
-    url = (
-        "https://api.openweathermap.org/data/2.5/weather"
-        f"?lat={lat}&lon={lon}&appid={api_key}&units=metric"
-    )
+    url = ("https://api.openweathermap.org/data/2.5/weather"f"?lat={lat}&lon={lon}&appid={api_key}&units=metric")
 
     response = requests.get(url, timeout=10)
 

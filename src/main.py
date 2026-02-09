@@ -1,3 +1,15 @@
+import sys
+import os
+
+if getattr(sys, 'frozen', False):
+    # Ensure streams exist
+    if sys.stdin is None or not hasattr(sys.stdin, 'fileno'):
+        sys.stdin = open(os.devnull, 'r')
+    if sys.stdout is None or not hasattr(sys.stdout, 'fileno'):
+        sys.stdout = open(os.devnull, 'w') 
+    if sys.stderr is None or not hasattr(sys.stderr, 'fileno'):
+        sys.stderr = open(os.devnull, 'w')
+
 
 from textual.app import App, ComposeResult
 from textual.containers import VerticalScroll, HorizontalGroup, Vertical
