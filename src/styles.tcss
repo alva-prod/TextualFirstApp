@@ -1,0 +1,74 @@
+/* Main container */
+#weather-timers {
+    padding: 1;
+}
+
+/* Weather widget - horizontal layout with content on left, button on right */
+WeatherWidget {
+    layout: horizontal;
+    height: auto;
+    border: round $primary;
+    padding: 0 1;
+    margin: 1 2;
+    background: $surface;
+}
+
+/* Left side - weather info container */
+WeatherWidget Vertical {
+    width: 1fr;
+    height: auto;
+    padding: 1 0;
+}
+
+#city-title {
+    text-style: bold;
+    color: $text;
+    height: 1;
+}
+
+#weather-info {
+    color: $text-muted;
+    height: auto;
+    margin-top: 1;
+}
+
+/* Right side - remove button */
+#remove {
+    width: 8;
+    height: 1;
+    min-width: 8;
+    min-height: 1;
+    margin-left: 2;
+}
+
+/* City prompt screen */
+CityPromptScreen {
+    align: center middle;
+}
+
+CityPromptScreen > Vertical {
+    width: 50;
+    height: auto;
+    border: thick $primary;
+    background: $surface;
+    padding: 2;
+}
+
+CityPromptScreen Static {
+    margin-bottom: 1;
+    text-align: center;
+}
+
+CityPromptScreen Input {
+    margin-bottom: 2;
+}
+
+CityPromptScreen Button {
+    width: 1fr;
+    margin: 0 1;
+}
+
+/* Button styling */
+Button {
+    min-width: 8;
+}
